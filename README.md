@@ -24,7 +24,10 @@ pip install youtube_dl
 ```
 pip install pafy
 ```
-
+- Descarge el proyecto desde el repositorio oficial:
+```
+git clone https://github.com/erickcasita/DownloadAudioFromYoutube
+```
 # Ejecución
 
 Para ejecutar el programa escriba la siguiente linea:
