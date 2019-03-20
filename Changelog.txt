@@ -1,0 +1,19 @@
+=======================
+    Versión 0.1
+
+Características :
+
+- Permite pegar directamente el link de Youtube. (Aún sin validar).
+- Barra de progreso totalmente funcional (En Windows se congela a la hora de descargar (creemos que es problema de los hilos))/(En linux sin problema).
+- Etiqueta personalizada (Avisa cuando el proceso de descarga empezó o terminó).
+
+======================= 
+    Vesión 0.2
+
+Características :
+
+- Se agregó botón para elegir la ruta de descarga personalizada.
+- Se agregó TextBox que almacena la ruta de descarga personalizada (sin validar).
+
+=======================
+
