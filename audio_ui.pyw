@@ -1,4 +1,6 @@
 from audio import *
+import os
+from PyQt5.QtWidgets import QFileDialog
 import pafy
 import youtube_dl
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
@@ -6,18 +8,24 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 		QtWidgets.QMainWindow.__init__(self, *args, **kwargs)
 		self.setupUi(self)
 		self.btn_descargar.clicked.connect(self.download_audio)
+		self.btn_destino.clicked.connect(self.ruta)
 
 	def download_audio(self):
+		ruta = self.txt_ruta.text()
 		self.progressBar.setValue(0)
 		url = self.txt_url.text()
 		video = pafy.new(url)
 		s = video.getbestaudio()
-		filename = s.download(callback=self.mycb)
+		filename = s.download(ruta,callback=self.mycb)
 		self.lbl_status.setText("Descarga finalizada")
 	def mycb(self,total, recvd, ratio, rate,eta):
 		self.lbl_status.setText("Descargando....")
 		self.progressBar.setMaximum(total)
 		self.progressBar.setValue(recvd)
+	def ruta(self):
+		path = os.path.normpath(QFileDialog.getExistingDirectory(self))
+		self.txt_ruta.setText(path)
+
 if __name__ == '__main__':
 	app = QtWidgets.QApplication([])
 	window = MainWindow()
