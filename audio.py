@@ -75,7 +75,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Download Audio From Youtube"))
         self.lbl_titulo.setText(_translate("MainWindow", "DOWNLOAD AUDIO FROM YOUTUBE"))
-        self.lbl_version.setText(_translate("MainWindow", "Versión 0.1"))
+        self.lbl_version.setText(_translate("MainWindow", "Versión 0.2"))
         self.lbl_url.setText(_translate("MainWindow", "Ingrese URL de Youtube:"))
         self.btn_descargar.setText(_translate("MainWindow", "Descargar"))
         self.btn_destino.setText(_translate("MainWindow", "Destino:"))
