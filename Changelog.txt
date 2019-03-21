@@ -16,4 +16,14 @@ Características :
 - Se agregó TextBox que almacena la ruta de descarga personalizada (sin validar).
 
 =======================
+    Versión 0.3
+
+    !Vaya Cambios!
+
+Características :
+    - Se agrego un logo en la parte frontal del programa ( elegimos un zombi (nos gustan los zombies) con ondas sonoras y la clave de sol ).
+    - Se corrigieron los errores al ingresar la URL de Youtube.
+    - Se agrego un botón que permite personalizar la ruta de salida del archivo de audio.
+    - Se agrego una tabla que contiene metadatos del video a descargar (Título y duración ).
+========================
 
