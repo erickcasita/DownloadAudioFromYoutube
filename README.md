@@ -7,6 +7,8 @@ Asegurese de tener las siguientes dependencias instaladas en python 3.x
 - pyqt5
 - youtube_dl
 - pafy
+- pydub
+- Adicionalmente deberá tener instalado el software ffmpeg (puede descargarlos desde los repositorios oficiales de Linux)
 
 # Instalación
 
@@ -23,6 +25,10 @@ pip install youtube_dl
 - Para instalar pafy
 ```
 pip install pafy
+
+- Para instalar pydub
+```
+pip install pydub
 ```
 - Descarge el proyecto desde el repositorio oficial:
 ```
@@ -32,5 +38,5 @@ git clone https://github.com/erickcasita/DownloadAudioFromYoutube
 
 Para ejecutar el programa escriba la siguiente linea:
 ```
-python audio_ui.pyw
+python setup.pyw
 ```
