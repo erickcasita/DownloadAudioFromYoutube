@@ -1,7 +1,7 @@
 # Download Audio From Youtube
 Herramienta sencilla para descargar audio de los video de Youtube. Escrita en Python.
 
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/erickcasita/DownloadAudioFromYoutube)
 
 # Requerimientos
 
@@ -29,9 +29,11 @@ pip install youtube_dl
 pip install pafy
 
 - Para instalar pydub
+
 ```
 pip install pydub
 ```
+
 - Descarge el proyecto desde el repositorio oficial:
 ```
 git clone https://github.com/erickcasita/DownloadAudioFromYoutube
