@@ -1,5 +1,5 @@
 =======================
-    Versión 0.1
+    Versión 0.1 Alpha
 
 Características :
 
@@ -8,7 +8,7 @@ Características :
 - Etiqueta personalizada (Avisa cuando el proceso de descarga empezó o terminó).
 
 ======================= 
-    Vesión 0.2
+    Vesión 0.2 Alpha
 
 Características :
 
@@ -16,7 +16,7 @@ Características :
 - Se agregó TextBox que almacena la ruta de descarga personalizada (sin validar).
 
 =======================
-    Versión 0.3
+    Versión 0.3 Alpha
 
     !Vaya Cambios!
 
@@ -26,4 +26,23 @@ Características :
     - Se agrego un botón que permite personalizar la ruta de salida del archivo de audio.
     - Se agrego una tabla que contiene metadatos del video a descargar (Título y duración ).
 ========================
+    Versión 0.4 Alpha
+Características:
 
+    - Se modificó el logo principal.
+    - Se estableció medidas estándar en la ventana princial.
+    - Función para convertir a MP3 Y OGG correctas.
+    - Barra de progreso al convertir sin funcionar -- en su lugar se agregó un mensaje.
+
+¿Qué sigue ahora?
+    Se considera establecer todas las funciones en hilos separados para que pueda ser multi-funcional.
+
+========================
+    Versión 0.5 Alpha
+Características:
+    - Se agregó un hilo para el proceso de la descarga ( por el usuario eyllanesc).
+    - Se agregó un item por cada descarga  en la tabla de datos (Por el usuario eyllanesc).
+    - Se agregó un hilo para la barra de conversión de audio. 
+    - Botón de descargar deshabilitado mientras se descarga (Para evitar errores)
+ ¿Qué sigue ahora?
+    Por más tonto que paresca el botón de cancelar sigue sin funcionar!
