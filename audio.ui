@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>918</width>
-    <height>694</height>
+    <height>715</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,14 +17,14 @@
    <widget class="QLabel" name="lbl_version">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>380</x>
       <y>300</y>
-      <width>91</width>
+      <width>121</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>Versión 0.4</string>
+     <string>Versión 0.5 Alpha</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -34,7 +34,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>290</y>
+      <y>300</y>
       <width>251</width>
       <height>21</height>
      </rect>
@@ -62,9 +62,12 @@
     </property>
    </widget>
    <widget class="QPushButton" name="btn_descargar">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>340</x>
       <y>440</y>
       <width>91</width>
       <height>31</height>
@@ -137,11 +140,17 @@
    <widget class="QLabel" name="lbl_titulo">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>20</x>
       <y>0</y>
-      <width>851</width>
-      <height>311</height>
+      <width>861</width>
+      <height>301</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="text">
      <string/>
@@ -208,8 +217,8 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>390</y>
+      <x>540</x>
+      <y>370</y>
       <width>271</width>
       <height>61</height>
      </rect>
@@ -250,6 +259,22 @@
      </property>
     </widget>
    </widget>
+   <widget class="QPushButton" name="btn_cancelar">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>440</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cancelar</string>
+    </property>
+   </widget>
    <zorder>lbl_titulo</zorder>
    <zorder>lbl_version</zorder>
    <zorder>lbl_url</zorder>
@@ -262,18 +287,14 @@
    <zorder>tableWidget</zorder>
    <zorder>label</zorder>
    <zorder>groupBox</zorder>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>918</width>
-     <height>25</height>
-    </rect>
-   </property>
+   <zorder>btn_cancelar</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAcerca_de">
+   <property name="text">
+    <string>Acerca de</string>
+   </property>
+  </action>
  </widget>
  <resources>
   <include location="loco_cabeza.qrc"/>
