@@ -1,6 +1,8 @@
 # Download Audio From Youtube
-Herramienta sencilla para descargar audio de los video de Youtube. Escrita en Python
+Herramienta sencilla para descargar audio de los video de Youtube. Escrita en Python.
+
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+
 # Requerimientos
 
 Asegurese de tener las siguientes dependencias instaladas en python 3.x
