@@ -14,35 +14,36 @@ Asegurese de tener las siguientes dependencias instaladas en python 3.x
 
 # Instalación
 
-- Para instalar pyqt5
-```
+Para instalar pyqt5:
+
+```bash
 pip install pyqt5
 ```
+Para instalar youtube_dl:
 
-- Para instalar youtube_dl
-```
+```bash
 pip install youtube_dl
 ```
+Para instalar pafy:
 
-- Para instalar pafy
-```
+```bash
 pip install pafy
-
-- Para instalar pydub
-
 ```
+Para instalar pydub:
+```bash
 pip install pydub
 ```
-
-- Descarge el proyecto desde el repositorio oficial:
-```
+Posteriormente, descargue el proyecto desde el repositoro oficial:
+```bash
 git clone https://github.com/erickcasita/DownloadAudioFromYoutube
 ```
-
 # Ejecución
 
-Para ejecutar el programa escriba la siguiente linea:
-
-```
+Para ejecutar el programa escriba el siguiente comando:
+```bash
 python setup.pyw
+```
+O en su defecto si tiene instalado las versiones de python 2 y 3:
+```bash
+python3 setup.pyw
 ```
