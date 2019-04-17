@@ -5,7 +5,7 @@ Herramienta sencilla para descargar audio de los video de Youtube. Escrita en Py
 
 # Requerimientos
 
-Asegurese de tener las siguientes dependencias instaladas en python 3.x
+Asegurese de tener las siguientes dependencias instaladas en python 3.x:
 - pyqt5
 - youtube_dl
 - pafy
