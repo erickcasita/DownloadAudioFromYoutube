@@ -53,4 +53,4 @@ python3 setup.pyw
 ```
 # Desarrolladores
 
-![Team-Desarrolladores](https://raw.githubusercontent.com/erickcasita/DownloadAudioFromYoutube/master/Screenshots/Developers.jpeg)
+![Team-Desarrolladores](https://raw.githubusercontent.com/erickcasita/DownloadAudioFromYoutube/master/Screenshots/Developers.jpg)
