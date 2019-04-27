@@ -1,5 +1,5 @@
 <RCC>
-  <qresource prefix="logo_cabeza">
+  <qresource prefix="logo_software">
     <file>logosoftware.png</file>
   </qresource>
 </RCC>

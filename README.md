@@ -4,8 +4,9 @@ Herramienta sencilla para descargar audio de los video de Youtube. Escrita en Py
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/erickcasita/DownloadAudioFromYoutube)[![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=103)](https://opensource.org/licenses/GPL-3.0/)
 
 
-![Interfaz del software](https://raw.githubusercontent.com/erickcasita/DownloadAudioFromYoutube/master/Screenshots/screenv0-5.png)
-![Música descargada y convertida](https://raw.githubusercontent.com/erickcasita/DownloadAudioFromYoutube/master/Screenshots/screenv0-5-2.png)
+![Interfaz del software](https://raw.githubusercontent.com/erickcasita/DownloadAudioFromYoutube/master/Screenshots/screenv0-6.png)
+![Interfaz del software parte II](https://raw.githubusercontent.com/erickcasita/DownloadAudioFromYoutube/master/Screenshots/screenv0-6-2.png)
+![Música descargada y archivo csv](https://raw.githubusercontent.com/erickcasita/DownloadAudioFromYoutube/master/Screenshots/screenv0-6-3.png)
 
 # Requerimientos
 
