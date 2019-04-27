@@ -18,276 +18,391 @@
     <property name="geometry">
      <rect>
       <x>380</x>
-      <y>300</y>
+      <y>210</y>
       <width>121</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>Versión 0.5 Alpha</string>
+     <string>Versión 0.6 Alpha</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="lbl_url">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>300</y>
-      <width>251</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Ingrese URL de Youtube:</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="txt_url">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>330</y>
-      <width>531</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_descargar">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>440</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Descargar</string>
-    </property>
-   </widget>
-   <widget class="QProgressBar" name="progressBar">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>480</y>
-      <width>371</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="value">
-     <number>0</number>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_status">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>600</y>
-      <width>291</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_destino">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>400</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Destino:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="txt_ruta">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>400</y>
-      <width>281</width>
-      <height>33</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_titulo">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>0</y>
-      <width>861</width>
-      <height>301</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="loco_cabeza.qrc">:/logo_cabeza/logosoftware.png</pixmap>
-    </property>
-   </widget>
-   <widget class="QTableWidget" name="tableWidget">
+   <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>520</y>
-      <width>791</width>
-      <height>61</height>
+      <y>230</y>
+      <width>841</width>
+      <height>451</height>
      </rect>
     </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
+    <property name="currentIndex">
+     <number>1</number>
     </property>
-    <property name="autoScroll">
-     <bool>true</bool>
-    </property>
-    <property name="horizontalScrollMode">
-     <enum>QAbstractItemView::ScrollPerItem</enum>
-    </property>
-    <row>
-     <property name="text">
-      <string>1</string>
-     </property>
-    </row>
-    <column>
-     <property name="text">
-      <string>Nombre </string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Duración</string>
-     </property>
-    </column>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Descargar Audio</string>
+     </attribute>
+     <widget class="QLabel" name="lbl_url">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>251</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Ingrese URL de Youtube:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_url">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>40</y>
+        <width>531</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>391</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Seleccione la ruta de salida o dejela por defecto:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_ruta">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>120</y>
+        <width>281</width>
+        <height>33</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_destino">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>120</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Destino:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_descargar">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>170</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Descargar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_cancelar">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>170</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cancelar</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>100</y>
+        <width>271</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="title">
+       <string>Seleccione  un Formato:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
+      <widget class="QRadioButton" name="radioButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>125</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>MP3</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>30</y>
+         <width>125</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>OGG</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>210</y>
+        <width>371</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>260</y>
+        <width>791</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="autoScroll">
+       <bool>true</bool>
+      </property>
+      <property name="horizontalScrollMode">
+       <enum>QAbstractItemView::ScrollPerItem</enum>
+      </property>
+      <row>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Nombre </string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Duración</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="lbl_status">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>350</y>
+        <width>291</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Obtener Metadatos</string>
+     </attribute>
+     <widget class="QLabel" name="lbl_url_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>251</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Ingrese URL de Youtube:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_url_2">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>40</y>
+        <width>531</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tabla_datos">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>130</y>
+        <width>841</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="columnCount">
+       <number>5</number>
+      </property>
+      <column>
+       <property name="text">
+        <string>Titulo</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Duracion</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Visitas</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Autor</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Imagen</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="btn_datos">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>80</y>
+        <width>101</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Obtener</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_exportar">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>80</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Exportar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_nuevo">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>80</y>
+        <width>101</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nuevo</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>370</y>
-      <width>391</width>
-      <height>17</height>
+      <x>0</x>
+      <y>20</y>
+      <width>901</width>
+      <height>181</height>
      </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-     </font>
     </property>
     <property name="text">
-     <string>Seleccione la ruta de salida o dejela por defecto:</string>
-    </property>
-   </widget>
-   <widget class="QGroupBox" name="groupBox">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>370</y>
-      <width>271</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::LeftToRight</enum>
-    </property>
-    <property name="title">
-     <string>Seleccione  un Formato:</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/logo_software/logosoftware.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignBottom|Qt::AlignHCenter</set>
-    </property>
-    <widget class="QRadioButton" name="radioButton">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>125</width>
-       <height>29</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>MP3</string>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="radioButton_2">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>30</y>
-       <width>125</width>
-       <height>29</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>OGG</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QPushButton" name="btn_cancelar">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>440</x>
-      <y>440</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Cancelar</string>
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <zorder>lbl_titulo</zorder>
-   <zorder>lbl_version</zorder>
-   <zorder>lbl_url</zorder>
-   <zorder>txt_url</zorder>
-   <zorder>btn_descargar</zorder>
-   <zorder>lbl_status</zorder>
-   <zorder>btn_destino</zorder>
-   <zorder>txt_ruta</zorder>
-   <zorder>progressBar</zorder>
-   <zorder>tableWidget</zorder>
-   <zorder>label</zorder>
-   <zorder>groupBox</zorder>
-   <zorder>btn_cancelar</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionAcerca_de">
@@ -297,7 +412,7 @@
   </action>
  </widget>
  <resources>
-  <include location="loco_cabeza.qrc"/>
+  <include location="logo_software.qrc"/>
  </resources>
  <connections/>
 </ui>
