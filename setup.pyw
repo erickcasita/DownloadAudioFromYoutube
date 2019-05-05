@@ -52,7 +52,7 @@ class DownloadAudio(QtCore.QObject):
         title = video.title
         duration = video.duration
         """
-        dwn = video.getbestaudio()
+        dwn = video.getbestaudio(preftype="webm")
         dwn.download(filepath=ruta, callback=self.mycb, meta=True)
         if (formato == "mp3"):
             self.signal_dwn_file.emit(title,True)
@@ -162,19 +162,23 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.tabla_datos.setItem(row, 3, QtWidgets.QTableWidgetItem(autor))
         self.tabla_datos.setItem(row, 4, QtWidgets.QTableWidgetItem(imagen))
     def exportar(self):
-        name, _ = QtWidgets.QFileDialog.getSaveFileName(self,"Exportar","","CSV(*.csv)")
-        if (name):
-            with open(str(name), "w") as fileOutput:
-                writer = csv.writer(fileOutput)
-                for row in range(self.tabla_datos.rowCount()):
-                    rowdata = []
-                    for column in range(self.tabla_datos.columnCount()):
-                        item = self.tabla_datos.item(row, column)
-                        if item is not None:
-                            rowdata.append(item.text())
-                        else:
-                            rowdata.append('')
-                    writer.writerow(rowdata)
+        if(self.tabla_datos.rowCount()>=1):
+            name, _ = QtWidgets.QFileDialog.getSaveFileName(self,"Exportar","","CSV(*.csv)")
+            if (name):
+                with open(str(name), "w") as fileOutput:
+                    writer = csv.writer(fileOutput)
+                    for row in range(self.tabla_datos.rowCount()):
+                        rowdata = []
+                        for column in range(self.tabla_datos.columnCount()):
+                            item = self.tabla_datos.item(row, column)
+                            if item is not None:
+                                rowdata.append(item.text())
+                            else:
+                                rowdata.append('')
+                        writer.writerow(rowdata)
+                QtWidgets.QMessageBox.information(self,"Completado.","¡Metadatos exportados!")
+        else:
+            QtWidgets.QMessageBox.critical(self, "Atención", """¡No hay contenido en la tabla!""")
     def limpiar_tabla(self):
         self.tabla_datos.clearContents()
         self.tabla_datos.setRowCount(0)
