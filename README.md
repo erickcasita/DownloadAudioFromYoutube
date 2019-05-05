@@ -52,6 +52,3 @@ O en su defecto si tiene instalado las versiones de python 2 y 3:
 ```bash
 python3 setup.pyw
 ```
-# Desarrolladores
-
-![Team-Desarrolladores](https://raw.githubusercontent.com/erickcasita/DownloadAudioFromYoutube/master/Screenshots/Developers.png)
